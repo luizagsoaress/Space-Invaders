@@ -11,6 +11,8 @@ Nessa versão, o usuário controla uma nave espacial, que deve atirar nos alien�
 
 Clique em "Novo Jogo" ou aperte "Enter" para começar.
 
+## Funcionalidades
+
 ![image](./github/github(1).png)
 
 A nave se movimenta apenas para os lados, use as setas do teclado para se mover e a tecla de espaço para atirar. Cada alien tem 3 vidas, atinja-o três vezes e ele será eliminado.
