@@ -9,9 +9,9 @@ Space Invaders é um clássico jogo de tiro em 2D lançado em 1978 pela empresa 
 
 Nessa versão, o usuário controla uma nave espacial, que deve atirar nos alienígenas na parte superior da tela. A cada inimigo eliminado, a velocidade de movimentação dos aliens é multiplicada.
 
-Clique em "Novo Jogo" ou aperte "Enter" para começar.
-
 ## Funcionalidades
+
+Clique em "Novo Jogo" ou aperte "Enter" para começar.
 
 ![image](./github/github(1).png)
 
