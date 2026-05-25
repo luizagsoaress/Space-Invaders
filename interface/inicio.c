@@ -15,7 +15,7 @@ int main(void) {
 
     InitAudioDevice();
 
-    def.tela.tipo = 0;
+    def.tela.tipo = 2;
 
     char path[1024];
     snprintf(path, sizeof(path), "%s/.local/share/spaceInvaders/assets/sons", getenv("HOME"));
