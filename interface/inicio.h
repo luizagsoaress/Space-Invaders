@@ -75,10 +75,9 @@ typedef struct {
     int alienQtd;
 } Def;
 
-Def def;
-
-int direcao = 1;
-int acelerador = 15;
+extern Def def;
+extern int direcao = 1;
+extern int acelerador = 15;
 
 void inicializarVariaveis();
 void carregarImagens();
@@ -107,7 +106,6 @@ void inicializarVariaveis() {
 
     direcao = 1;
     acelerador = 15;
-    def.tela.tipo = 0;
     def.tela.frameTimerCount = 0;
     def.meteoro.x = 1050;
     def.meteoro.y = 0;
@@ -256,9 +254,11 @@ void verificarClique() {
     if(((IsMouseButtonPressed(MOUSE_BUTTON_LEFT) && x >= 455 && x <= 560 && y >= 450 && y <= 475) || IsKeyPressed(KEY_ENTER) || IsKeyPressedRepeat(KEY_ENTER) || IsKeyDown(KEY_ENTER)) && def.tela.tipo == 0) {
         inicializarVariaveis();
         def.tela.tipo = 1;
+        return;
     } else if((IsKeyPressed(KEY_ENTER) || IsKeyPressedRepeat(KEY_ENTER) || IsKeyDown(KEY_ENTER)) && (def.tela.tipo == 2 || def.tela.tipo == 3)) {
         inicializarVariaveis();
         def.tela.tipo = 1;
+        return;
     }
 }
 
@@ -462,6 +462,7 @@ void loop() {
                 def.tela.frameTimerCount = 0;
             }
         }
+        verificarClique();
         return;
     } else if(def.tela.tipo == 3) {
         ClearBackground(BLACK);
